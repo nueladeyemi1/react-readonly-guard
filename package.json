@@ -1,0 +1,23 @@
+{
+  "name": "react-readonly-guard",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "lib/check-readonly.cjs",
+  "bin": {
+    "react-readonly-guard": "bin/cli.cjs",
+    "react-readonly-guard-install": "bin/install.cjs"
+  },
+  "author": "Emmanuel Adeyemi",
+  "files": [
+    "lib",
+    "src",
+    "bin"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "postinstall": "react-readonly-guard-install"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1"
+  }
+}
