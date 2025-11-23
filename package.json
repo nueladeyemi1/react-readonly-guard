@@ -1,23 +1,38 @@
 {
   "name": "react-readonly-guard",
   "version": "1.0.0",
-  "type": "module",
+  "description": "Protect critical files by marking them @readonly. Prevent commits unless files are unlocked with @unlock.",
   "main": "lib/check-readonly.cjs",
   "bin": {
     "react-readonly-guard": "bin/cli.cjs",
     "react-readonly-guard-install": "bin/install.cjs"
   },
-  "author": "Emmanuel Adeyemi",
-  "files": [
-    "lib",
-    "src",
-    "bin"
-  ],
   "scripts": {
     "build": "tsc",
     "postinstall": "react-readonly-guard-install"
   },
+  "files": [
+    "bin",
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "react",
+    "readonly",
+    "guard",
+    "unlock",
+    "husky",
+    "commit-protection",
+    "code-safety",
+    "file-protection",
+    "pre-commit"
+  ],
+  "license": "MIT",
+  "author": "Emmanuel Adeyemi",
+  "dependencies": {},
   "devDependencies": {
+    "typescript": "^5.3.3",
     "@types/node": "^24.10.1"
   }
 }

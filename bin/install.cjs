@@ -1,5 +1,4 @@
-// #!/usr/bin/env node
-
+#!/usr/bin/env node
 const { execSync } = require('child_process')
 const fs = require('fs')
 const path = require('path')
@@ -27,7 +26,7 @@ if (!fs.existsSync(huskyDir)) {
 }
 
 const hookPath = path.join(huskyDir, 'pre-commit')
-const guardCmd = `npx react-readonly-guard "$@"`
+const guardCmd = `npx react-readonly-guard`
 
 if (!fs.existsSync(hookPath)) {
   fs.writeFileSync(hookPath, '#!/bin/sh\n. "$(dirname "$0")/_/husky.sh"\n')
